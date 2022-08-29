@@ -14,8 +14,7 @@ This project is based on TAILWIND CSS. One have to use it to understand its true
 # 💻 Tech Stack Used :
 
 ​
-![HTML5](https://img.shields.io/badge/-Html-red)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![HTML5](https://img.shields.io/badge/-Html-red))
 ![tailwind](https://img.shields.io/badge/-Tailwind-blue) 
 
 </br>
