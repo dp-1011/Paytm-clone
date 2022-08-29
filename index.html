@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paytm</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <!--tailwind  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+     <script>
+    tailwind.config = {
+      theme: {
+        screens:{
+            sm:'468px',
+            md:'768px',
+            lg:'960px',
+            xl:'1200px',
+        },
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <!-- scrollbar---------- -->
+  <style>
+    ::-webkit-scrollbar {
+    width:10px;
+    }
+    ::-webkit-scrollbar-track {
+    border-radius: 5px;
+    }
+    ::-webkit-scrollbar-thumb {
+    background: #01baf3; 
+    border-radius: 10px;
+    }
+  </style>
+   <!-- Font Awesome -->
+   <script defer src="https://use.fontawesome.com/releases/v6.1.2/js/all.js"
+   integrity="sha384-11X1bEJVFeFtn94r1jlvSC7tlJkV2VJctorjswdLzqOJ6ZvYBSZQkaQVXG0R4Flt"
+   crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="mt-5">
+        <div class="navbar">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+              </div>
+              <img class="w-48 pl-10" src="./assets/paytm_logo.png" alt="logo">
+              <!-- <a class="btn btn-ghost normal-case text-xl">daisyUI</a> -->
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal p-0 font-medium">
+                
+                <li tabindex="0">
+                  <a class="text-lg">
+                    Paytm for Customers
+                  </a>
+                  <ul class="p-2 text-black">
+                    <li class="bg-white "><a>Payments</a></li>
+                    <li class="bg-white"><a>Ticket Booking</a></li>
+                    <li class="bg-white"><a>Financial Services</a></li>
+                  </ul>
+                </li>
+                <li tabindex="0">
+                  <a class="text-lg">
+                    Paytm for Business
+                  </a>
+                  <ul class="p-2 text-black">
+                    <li class="bg-white"><a>Consumer Payment</a></li>
+                    <li class="bg-white"><a>Business Payment</a></li>
+                    <li class="bg-white"><a> Business Software</a></li>
+                    <li class="bg-white"><a>Financial Service</a></li>
+                    <li class="bg-white"><a>Developer</a></li>
+                  </ul>
+                </li>
+                <li tabindex="0">
+                  <a class="text-lg">
+                    Company
+                  </a>
+                  <ul class="p-2 text-black">
+                    <li class="bg-white"><a>About</a></li>
+                    <li class="bg-white"><a>Blog</a></li>
+                    <li class="bg-white"><a>Contact Us</a></li>
+                  </ul>
+                </li>
+                <li tabindex="0">
+                  <a class="text-lg">
+                    Investor Relation
+                  </a>
+                  <ul class="p-2 z-10 text-black">
+                    <li class="bg-white"><a>Financial Information</a></li>
+                    <li class="bg-white"><a>Corporate Governance</a></li>
+                    <li class="bg-white"><a>Stock Exchange</a></li>
+                    <li class="bg-white"><a>General Meeting</a></li>
+                    <li class="bg-white"><a>Investor Resources</a></li>
+                  </ul>
+                </li>
+                <li><a class="text-lg">Career</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end ">
+              <a class="btn bg-sky-400 text-white rounded-3xl pr-1">Sign In <img class="ml-4  w-10 hover:invert-0" src="./assets/signin.svg" alt=""></a>
+            </div>
+        </div>
+        <div class="bg-gradient-to-b from-gray-400  to-gray-200 text-black text-center p-1 ">No Wallet KYC Required 😊 to pay using UPI on Paytm.Learn more.</div>
+         <!-- ---------------------------hero-1----------------------- -->
+         <!-- ---------------------------hero-1----------------------- -->
+        <div class="hero min-h-screen pt-0 ">
+            <div class="hero-content flex-col justify-between w-screen lg:flex-row-reverse">
+              <img src="./assets/1656568118664.png" class="w-2/5  rounded-lg shadow-2xl" />
+              <div >
+                <img class="w-20 pb-10" src="./assets/1654517453942.png" alt="upi">
+                <h1 class="text-5xl font-bold">India's Most-loved <br> Payments App</h1>
+                <p class="py-6">Recharge & pay bills, book flights & movie tickets, <br> open a savings account, invest in stocks & mutual <br> funds, and do a lot more.</p>
+                <button class="btn btn-black rounded-3xl hover:bg-white hover:text-black">Download Now
+                  <i class="fa-brands fa-apple h-5 ml-3"></i>
+                  <i class="fa-brands fa-google-play h-4 ml-3"></i>
+                </button>
+              </div>
+            </div>
+        </div>
+    </div>
+    <!-- blue card-------------------------------------------------- -->
+    <!-- blue card-------------------------------------------------- -->
+    <div class=" bg-sky-500 text-white ">
+        <h1 class="text-5xl pt-5 pl-20 ">Recharge & Pay Bills on Paytm</h1>
+        <div class="grid grid-cols-3  lg:flex flex-row pl-20 pb-10 ">
+            <div class=" p-6 rounded-md w-40 hover:bg-sky-700 ">
+                <img src="./assets/1626251017535.png" alt="phone" class="w-20 h-20 rounded ">
+                <div class="mt-6 mb-2">
+                    <h2 class="text-xl font-semibold tracking-wide">Recharge Prepaid Mobile</h2>
+                    <img class="-mt-6 ml-16 invert" src="./assets/angle-right-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+            <div class=" p-6 rounded-md w-40 hover:bg-sky-700 mr-14">
+                <img src="./assets/1626778824903.png" alt="phone" class="w-20 h-20 rounded ">
+                <div class="mt-6 mb-2">
+                    <h2 class="text-xl font-semibold tracking-wide">Pay <br> Rent Payment</h2>
+                    <img class="-mt-6 ml-20 invert" src="./assets/angle-right-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+            <div class=" p-6 rounded-md w-40 hover:bg-sky-700 mr-14">
+                <img src="./assets/1626251043534.png" alt="phone" class="w-20 h-20 rounded ">
+                <div class="mt-6 mb-2">
+                    <h2 class="text-xl font-semibold tracking-wide">Pay Electricity Bill</h2>
+                    <img class="-mt-6 ml-8 invert" src="./assets/angle-right-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+            <div class=" p-6 rounded-md w-40 hover:bg-sky-700 mr-14">
+                <img src="./assets/1626251101045.png" alt="phone" class="w-20 h-20 rounded ">
+                <div class="mt-6 mb-2">
+                    <h2 class="text-xl font-semibold tracking-wide">Recharge DTH Connection</h2>
+                    <img class="-mt-6 ml-28 invert" src="./assets/angle-right-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+            <div class=" p-6 rounded-md w-40 hover:bg-sky-700 mr-14">
+                <img src="./assets/1626251127863.png" alt="phone" class="w-20 h-20 rounded ">
+                <div class="mt-6 mb-2">
+                    <h2 class="text-xl font-semibold tracking-wide">Book Gas Cylinder</h2>
+                    <img class="-mt-6 ml-20 invert" src="./assets/angle-right-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+            <div class=" p-6 rounded-md w-40 hover:bg-sky-700 mr-14">
+                <img src="./assets/1627454209116.png" alt="phone" class="w-20 h-20 rounded ">
+                <div class="mt-6 mb-2">
+                    <h2 class="text-xl font-semibold tracking-wide">Pay Credit Card Bill </h2>
+                    <img class="-mt-6 ml-20 invert" src="./assets/angle-right-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+            <div class=" p-6 rounded-md w-40 hover:bg-sky-700 mr-14">
+                <img src="./assets/1626268580682.png" alt="phone" class="w-20 h-20 rounded ">
+                <div class="mt-6 mb-2">
+                    <h2 class="text-xl font-semibold tracking-wide">All Payment Services</h2>
+                    <img class="-mt-6 ml-20 invert" src="./assets/angle-right-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+
+          </div>
+        </div>
+    </div>
+    <!-- -------------------dark blue------------------------------ -->
+    <!-- -------------------dark blue------------------------------ -->
+    <div class=" bg-blue-900 text-white ">
+        <h1 class="text-5xl pt-5 pl-20 ">Book & Buy on Paytm</h1>
+        <div class="grid grid-cols-3  lg:flex flex-row pl-20 pb-10">
+            <div class=" p-6 rounded-md w-40 hover:bg-blue-800 ">
+                <img src="./assets/1626259710574.png" alt="phone" class="w-20 h-20 rounded ">
+                <div class="mt-6 mb-2">
+                    <h2 class="text-xl font-semibold tracking-wide">Movie Ticket</h2>
+                    <img class="-mt-6 ml-16 invert" src="./assets/angle-right-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+            <div class=" p-6 rounded-md w-40 hover:bg-blue-800 mr-14">
+                <img src="./assets/1626259884425.png" alt="phone" class="w-20 h-20 rounded ">
+                <div class="mt-6 mb-2">
+                    <h2 class="text-xl font-semibold tracking-wide">Pay <br> Flight Tickets</h2>
+                    <img class="-mt-6 ml-16 invert" src="./assets/angle-right-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+            <div class=" p-6 rounded-md w-40 hover:bg-blue-800 mr-14">
+                <img src="./assets/1626260477699.png" alt="phone" class="w-20 h-20 rounded ">
+                <div class="mt-6 mb-2">
+                    <h2 class="text-xl font-semibold tracking-wide">Bus Ticket</h2>
+                    <img class="-mt-6 ml-24 invert" src="./assets/angle-right-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+            <div class=" p-6 rounded-md w-40 hover:bg-blue-800 mr-14">
+                <img src="./assets/1626260495975.png" alt="phone" class="w-20 h-20 rounded ">
+                <div class="mt-6 mb-2">
+                    <h2 class="text-xl font-semibold tracking-wide">Train Ticket</h2>
+                    <img class="-mt-6 ml-28 invert" src="./assets/angle-right-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+            <div class=" p-6 rounded-md w-40 hover:bg-blue-800 mr-14">
+                <img src="./assets/1626259953707.png" alt="phone" class="w-20 h-20 rounded ">
+                <div class="mt-6 mb-2">
+                    <h2 class="text-xl font-semibold tracking-wide">Car & Bike</h2>
+                    <img class="-mt-6 ml-24 invert" src="./assets/angle-right-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+            <div class=" p-6 rounded-md w-40 hover:bg-blue-800 mr-14">
+                <img src="./assets/1626259968563.png" alt="phone" class="w-20 h-20 rounded ">
+                <div class="mt-6 mb-2">
+                    <h2 class="text-xl font-semibold tracking-wide">International Flights </h2>
+                    <img class="-mt-6 ml-16 invert" src="./assets/angle-right-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+            <div class=" p-6 rounded-md w-40 hover:bg-blue-800 mr-14">
+                <img src="./assets/1626450848003.png" alt="phone" class="w-20 h-20 rounded ">
+                <div class="mt-6 mb-2">
+                    <h2 class="text-xl font-semibold tracking-wide">Invest in Stocks</h2>
+                    <img class="-mt-6 ml-16 invert" src="./assets/angle-right-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------hero-2-------------------------- -->
+    <!-- ---------------------hero-2-------------------------- -->
+    <h1 class="text-6xl pt-10 pl-20 pb-5">Paytm Payment Instruments</h1>
+    <div class="hero  ">
+        <div class="hero-content flex-col justify-around p-20 mb-10 mt-10 w-screen lg:flex-row-reverse shadow-2xl">
+          <img src="./assets/hero-2.webp" class="w-2/5  rounded-lg " />
+          <div >
+            <div class="pb-10 relative"> 
+              <img class="w-20 " src="./assets/wallet.png" alt="upi">
+              <h2 class="ml-20 absolute bottom-16 left-8  "> Payment <br> Wallet</h2>
+            </div>
+            <h1 class="text-5xl font-bold">The Fastest Way to <br> Pay In-store & Online.</h1>
+            <p class="py-6"> Load up your Paytm Wallet for free and make payments <br> 
+              in a jiffy at over 21 million stores, websites and apps.</p>
+            <button class="btn btn-black rounded-3xl hover:bg-white hover:text-black">Download Now
+              <i class="fa-brands fa-apple h-5 ml-3"></i>
+              <i class="fa-brands fa-google-play h-4 ml-3"></i>
+            </button>
+          </div>
+        </div>
+    </div>
+     <!-- ---------------------hero-3-------------------------- -->
+    <!-- ---------------------hero-3-------------------------- -->
+    <div class="hero   ">
+        <div class="hero-content flex-col justify-around p-20 mb-10 mt-10 w-screen lg:flex-row-reverse shadow-2xl">
+          <img src="./assets/nft.png" class="w-2/5  rounded-lg " />
+          <div >
+            <div class="pb-10 relative"> 
+              <img class="w-20 " src="./assets/upi.png" alt="upi">
+              <h2 class="ml-20 absolute bottom-16 left-8  "> UPI Money <br> Transfer</h2>
+            </div>
+            <h1 class="text-5xl font-bold">Pay anyone directly <br> from your bank <br> account.</h1>
+            <p class="py-6"> Pay anyone, everywhere. Make contactless & secure <br>
+               payments in-stores or online using Paytm Wallet or <br>
+                Directly from your Bank Account. Plus, send & receive <br>
+                 money from anyone. </p>
+            <button class="btn btn-black rounded-3xl hover:bg-white hover:text-black">Download Now
+              <i class="fa-brands fa-apple h-5 ml-3"></i>
+              <i class="fa-brands fa-google-play h-4 ml-3"></i>
+            </button>
+          </div>
+        </div>
+    </div>
+     <!-- ---------------------hero-4-------------------------- -->
+    <!-- ---------------------hero-4-------------------------- -->
+    <div class="hero   ">
+        <div class="hero-content flex-col justify-around p-20 mb-10 mt-10 w-screen lg:flex-row-reverse shadow-2xl">
+          <img src="./assets/bose.png" class="w-2/5  rounded-lg " />
+          <div >
+            <div class="pb-10 "> 
+              <img class="w-48 " src="./assets/post.png" alt="upi">
+            </div>
+            <h1 class="text-5xl font-bold">Want it? <br>
+              No more waiting for it.</h1>
+            <p class="py-6"> With Paytm Postpaid, your wishlist doesn't have to be <br>
+               on the waitlist. Shop for the things you want today and <br>
+                pay for them next month. </p>
+            <button class="btn bg-blue-800 rounded-3xl hover:bg-sky-500 border-none group">Learn more
+              <div class=" flex items-center transition-transform group-hover:translate-x-[2px] before:bg-slate-100
+              relative left-2  before:absolute  before:h-[3px] before:rounded-2xl before:w-0 
+               before:transition-[width]  group-hover:before:w-3 "></div>
+              <img class="invert h-8  transform group-hover:translate-x-1 transition-transform " src="./assets/angle-right-svgrepo-com.svg" alt="">
+            </button>
+          </div>
+        </div>
+    </div>
+    <!-- ------------card---------------------------- -->
+    <!-- ------------card---------------------------- -->
+    <div class="flex flex-row justify-evenly ">
+      <div class="card w-4/12  shadow-2xl ">
+        <div class="card-body">
+          <img class="w-96" src="./assets/hdfc.png " alt="">
+          <h1 class="card-title">Unlimited Cashback <br> Every time</h1>
+          <p>Paytm HDFC Bank Select Credit Card. A card <br> with assured Cashback and incredible offers.</p>
+        </div>
+        <figure><img class="w-96" src="./assets/onecard.png" alt="card" /></figure>
+      </div>
+      <div class="card card w-4/12   shadow-2xl ">
+        <div class="card-body">
+          <img class="pt-24 w-96" src="./assets/sbi.png" alt="">
+          <h1 class="card-title">Indias Most <br> Sincere Credit Card</h1>
+          <p>Paytm SBI Card SELECT - With Intelligent <br> Features & Great Rewards that Never Expire</p>
+        </div>
+        <figure><img class="w-96" src="./assets/twocard.webp" alt="card" /></figure>
+      </div>
+    </div> 
+    <!-- ------------------hero 5 ------------------------- -->
+    <!-- ------------------hero 5 ------------------------- -->
+    <h1 class="text-6xl pt-24 pl-20 pb-5">Financial Services by Paytm</h1>
+    <div class="hero   ">
+      <div class="hero-content flex-col justify-around p-20 mb-10 mt-10 w-screen lg:flex-row-reverse shadow-2xl">
+        <img src="./assets/thirty.png" class="w-2/5  rounded-lg " />
+        <div >
+          <div class="pb-10 "> 
+            <img class="w-48 " src="./assets/bank.png" alt="upi">
+          </div>
+          <h1 class="text-5xl font-bold">India's most sincere <br> bank.</h1>
+          <p class="py-6 "> Paytm Payments Bank offers secure, transparent and <br> risk-free banking at your fingertips. With instant <br>
+             account opening, virtual debit card and zero balance <br> requirements, experience the future of banking today. </p>
+          <button class="btn bg-blue-800 rounded-3xl hover:bg-sky-500 border-none group">Learn more
+            <div class=" flex items-center transition-transform group-hover:translate-x-[2px] before:bg-slate-100
+              relative left-2  before:absolute  before:h-[3px] before:rounded-2xl before:w-0 
+               before:transition-[width]  group-hover:before:w-3 "></div>
+            <img class="invert h-8 transform group-hover:translate-x-1 transition-transform " src="./assets/angle-right-svgrepo-com.svg" alt="">
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- -------------------------------hero6----------------------------------- -->
+    <!-- -------------------------------hero6----------------------------------- -->
+    <div class="hero bg-local shadow-2xl" style="background-image: url(./assets/bg.png) ">
+      <div class="hero-content flex-col justify-around p-20 mb-10 mt-10 w-screen lg:flex-row ">
+        <img src="./assets/tax.png" class="w-2/5  rounded-lg " />
+        <div >
+          <div class="pb-10 "> 
+            <img class="w-48 " src="./assets/money.png" alt="upi">
+          </div>
+          <h1 class="text-5xl font-bold text-black">Build Long-term <br> Wealth & Achieve <br> your Goals.</h1>
+          <p class="py-6 text-black"> Investing on Paytm Money is transparent, low-cost and <br> commission-free. Buy stocks & mutual funds that can <br>
+             help you create wealth & realise your dreams.</p>
+          <button class="btn bg-blue-800 rounded-3xl hover:bg-sky-500 border-none group">Learn more
+            <div class=" flex items-center transition-transform group-hover:translate-x-[2px] before:bg-slate-100
+                relative left-2  before:absolute  before:h-[3px] before:rounded-2xl before:w-0 
+                before:transition-[width]  group-hover:before:w-3 ">
+              </div>
+            <img class="invert h-8 transform group-hover:translate-x-1 transition-transform " src="./assets/angle-right-svgrepo-com.svg" alt="">
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- -----------------------------hero7----------------------------------- -->
+    <!-- -----------------------------hero7----------------------------------- -->
+    <div class="hero   ">
+      <div class="hero-content flex-col justify-around p-20 mb-10 mt-10 w-screen lg:flex-row-reverse shadow-2xl">
+        <img src="./assets/insu-hero.png" class="w-2/5  rounded-lg " />
+        <div >
+          <div class="pb-10 "> 
+            <img class="w-48 " src="./assets/insu.jpeg" alt="upi">
+          </div>
+          <h1 class="text-5xl font-bold">Insurance made easy.</h1>
+          <p class="py-6"> Buying insurance does not have to be tedious, time <br> -consuming & confusing. Paytm Insurance removes the <br>
+             worry of getting insured by making it  simple, <br>
+            convenient & easy-to-understand.</p>
+            <button class="btn bg-blue-800 rounded-3xl hover:bg-sky-500 border-none group">Learn more
+              <div class=" flex items-center transition-transform group-hover:translate-x-[2px] before:bg-slate-100
+                relative left-2  before:absolute  before:h-[3px] before:rounded-2xl before:w-0 
+                before:transition-[width]  group-hover:before:w-3 ">
+              </div>
+              <img class="invert h-8 transform group-hover:translate-x-1 transition-transform " src="./assets/angle-right-svgrepo-com.svg" alt="">
+            </button>
+        </div>
+      </div>
+    </div>
+    <!-- ----------------------hero8----------------------------- -->
+    <!-- ----------------------hero8----------------------------- -->
+    <div class="hero bg-local shadow-2xl" >
+      <div class="hero-content flex-col justify-around p-20 mb-10 mt-10 w-screen lg:flex-row ">
+        <img src="./assets/congrats.png" class="w-2/5  rounded-lg " />
+        <div >
+          <div class="pb-10 "> 
+            <img class="w-48 " src="./assets/loan.png" alt="upi">
+          </div>
+          <h1 class="text-5xl font-bold">Get a Personal Loan in <br> 2 Minutes.</h1>
+          <p class="py-6"> Paytm offers India's quickest multi-purpose, hassle-free loan. It <br>
+             is 100% digital, transparent and paperless. </p>
+             <button class="btn bg-blue-800 rounded-3xl hover:bg-sky-500 border-none group">Learn more
+              <div class=" flex items-center transition-transform group-hover:translate-x-[2px] before:bg-slate-100
+                relative left-2  before:absolute  before:h-[3px] before:rounded-2xl before:w-0 
+                before:transition-[width]  group-hover:before:w-3 ">
+              </div>
+              <img class="invert h-8 transform group-hover:translate-x-1 transition-transform " src="./assets/angle-right-svgrepo-com.svg" alt="">
+            </button>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------------------hero9---------------------------------- -->
+    <!-- ------------------------------hero9---------------------------------- -->
+    <h1 class="text-6xl pt-10 pl-20 pb-5">Business Services by Paytm</h1>
+    <div class="hero bg-local " >
+      <div class="hero-content flex-col justify-around p-20 mb-10 mt-10 w-screen lg:flex-row-reverse shadow-2xl ">
+        <img src="./assets/addi.png" class="w-2/5  rounded-lg " />
+        <div >
+          
+          <h1 class="text-5xl font-bold">Accept payments <br> online with ease</h1>
+          <p class="py-6"> Grow your business with the payment gateway that <br>
+             powers India’s largest brands and even the Paytm App</p>
+             <button class="btn bg-blue-800 rounded-3xl hover:bg-sky-500 border-none group">Learn more
+              <div class=" flex items-center transition-transform group-hover:translate-x-[2px] before:bg-slate-100
+                relative left-2  before:absolute  before:h-[3px] before:rounded-2xl before:w-0 
+                before:transition-[width]  group-hover:before:w-3 ">
+              </div>
+              <img class="invert h-8 transform group-hover:translate-x-1 transition-transform " src="./assets/angle-right-svgrepo-com.svg" alt="">
+            </button>
+        </div>
+      </div>
+    </div>
+    <!-- -------------------------hero9--------------------------- -->
+    <!-- -------------------------hero9--------------------------- -->
+    <div class="hero bg-local " >
+      <div class="hero-content flex-col justify-around p-20 mb-10 mt-10 w-screen lg:flex-row-reverse shadow-2xl ">
+        <img src="./assets/gan.png" class="w-2/5  rounded-lg " />
+        <div >
+          
+          <h1 class="text-5xl font-bold">In-shop payments <br> powered by Paytm.</h1>
+          <p class="py-6"> Millions of small & big businesses use Paytm to accept <br>
+             payments anywhere any time with a wide range of <br>
+              solutions for all kind of merchants</p>
+              <button class="btn bg-blue-800 rounded-3xl hover:bg-sky-500 border-none group">Learn more
+                <div class=" flex items-center transition-transform group-hover:translate-x-[2px] before:bg-slate-100
+                relative left-2  before:absolute  before:h-[3px] before:rounded-2xl before:w-0 
+                before:transition-[width]  group-hover:before:w-3 ">
+              </div>
+                <img class="invert h-8 transform group-hover:translate-x-1 transition-transform " src="./assets/angle-right-svgrepo-com.svg" alt="">
+              </button>
+        </div>
+      </div>
+    </div>
+    <!-- --------------------------------------card-2----------------------------- -->
+    <!-- --------------------------------------card-2----------------------------- -->
+    <h1 class="text-4xl pt-10 pl-20 pb-5">Business Tools to help <br> your business grow</h1>
+
+    <div class="grid grid-cols-2 lg:flex flex-row justify-between pl-20">
+      <div class="card w-96  ">
+        <figure class="">
+          <img src="./assets/half.png" class=" w-80 rounded-xl" />
+        </figure>
+        <div class="card-body  ">
+          <h2 class="card-title">POS Billing <br>Software</h2>
+          <p>Say Hello to Smart Retail <br> Business Management</p>
+          <div class="card-actions">
+            <button class="btn bg-transparent hover:bg-transparent text-black border-none group">Learn more
+              <img class=" h-3 invisible group-hover:visible transform group-hover:translate-x-1 transition-transform ease-in-out " src="./assets/arrow.svg" alt="">
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="card w-96  ">
+        <figure class="">
+          <img src="./assets/zero.png" class="w-80 rounded-xl" />
+        </figure>
+        <div class="card-body  ">
+          <h2 class="card-title">Paytm for <br>
+            Business App</h2>
+          <p>Everything you need to <br> manage your business <br> on your phone</p>
+          <div class="card-actions">
+            <button class="btn bg-transparent hover:bg-transparent text-black border-none group">Learn more
+              <img class=" h-3 invisible group-hover:visible transform group-hover:translate-x-1 transition-transform ease-in-out " src="./assets/arrow.svg" alt="">
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="card w-96  ">
+        <figure class="">
+          <img src="./assets/car.png" class="w-80 rounded-xl" />
+        </figure>
+        <div class="card-body  ">
+          <h2 class="card-title">Advertise on <br> Paytm</h2>
+          <p>Grow your business by <br> advertising on India’s <br> largest mobile business</p>
+          <div class="card-actions">
+            <button class="btn bg-transparent hover:bg-transparent text-black border-none group">Learn more
+              <img class=" h-3 invisible group-hover:visible transform group-hover:translate-x-1 transition-transform ease-in-out " src="./assets/arrow.svg" alt="">
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="card w-96  ">
+        <figure class="">
+          <img src="./assets/ramu.png" class="w-80 rounded-xl" />
+        </figure>
+        <div class="card-body  ">
+          <h2 class="card-title">Business <br> Khata</h2>
+          <p>Managing Khata made easy</p>
+          <div class="card-actions">
+            <button class="btn bg-transparent hover:bg-transparent text-black border-none group">Learn more
+              <img class=" h-3  invisible group-hover:visible transform group-hover:translate-x-1 transition-transform ease-in-out " src="./assets/arrow.svg" alt="">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------carousel----------------------------- -->
+    <!-- ---------------carousel----------------------------- -->
+    <div class="flex flex-row items-center ml-40 mt-28">
+      <div class="card w-60  ">
+        <figure >
+          <img src="./assets/money.png" class=" w-60 rounded-xl" />
+        </figure>
+        <div class="card-body  ">
+          <p>Get started on wealth <br> creation journey with Zero brokerage fee <br> & no hidden charges.</p>
+          <div class="card-actions">
+            <button class="font-bold text-sky-500">Learn Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="w-3/5 grid grid-cols-2 lg:flex flex-row justify-between">
+        <div class=" p-1 rounded-md w-28 bg-sky-500 group   ">
+          <div class="overflow-hidden">
+            <img src="./assets/bull.png" alt="phone" class="w-40  rounded scale-100 group-hover:scale-110 ease-in duration-150 ">
+          </div>
+          <div class="mt-2 mb-2">
+              <h2 class="text-sm font-semibold tracking-wide">Recharge Prepaid Mobile</h2>
+          </div>
+        </div>  
+        <div class=" p-1 rounded-md w-28 bg-sky-500 group  ">
+          <div class="overflow-hidden">
+            <img src="./assets/shor.png" alt="phone" class="w-40  rounded scale-100 group-hover:scale-110 ease-in duration-150 ">
+          </div>
+          <div class="mt-2 mb-2">
+              <h2 class="text-sm font-semibold tracking-wide">Apply for IPO</h2>
+          </div>
+        </div>  
+        <div class=" p-1 rounded-md w-28 bg-sky-500 group ">
+          <div class="overflow-hidden">
+            <img src="./assets/paisa.png" alt="phone" class="w-40  rounded scale-100 group-hover:scale-110 ease-in duration-150 ">
+          </div>
+          <div class="mt-2 mb-2">
+              <h2 class="text-sm font-semibold tracking-wide">Invest in ETFs</h2>
+          </div>
+        </div>  
+        <div class=" p-1 rounded-md w-28 bg-sky-500 group ">
+          <div class="overflow-hidden">
+            <img src="./assets/gold.png" alt="phone" class="w-40  rounded scale-100 group-hover:scale-110 ease-in duration-150 ">
+          </div>
+          <div class="mt-2 mb-2">
+              <h2 class="text-sm font-semibold tracking-wide">Buy Gold</h2>
+          </div>
+        </div>  
+        <div class=" p-1 rounded-md w-28 bg-sky-500 group  ">
+          <div class="overflow-hidden">
+            <img src="./assets/grow.png" alt="phone" class="w-40  rounded scale-100 group-hover:scale-110 ease-in duration-150 ">
+          </div>
+          <div class="mt-2 mb-2">
+              <h2 class="text-sm font-semibold tracking-wide">Invest in Mutual Funds</h2>
+          </div>
+        </div>  
+      </div>
+    </div>
+        <!-- --------------2nd-carousel----------------------------- -->
+    <!-- --------------2nd-carousel----------------------------- -->
+    <div class="flex flex-row items-center ml-40 mt-28">
+      <div class="card w-60  ">
+        <figure class="">
+          <img src="./assets/travel.png" class=" w-60 rounded-xl " />
+        </figure>
+        <div class="card-body  ">
+          <p>Best travel solutions with <br> quick ticket bookings, great <br> offers and easy refunds</p>
+          <div class="card-actions">
+            <button class="font-bold text-sky-500">Learn Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="w-3/4 grid grid-cols-2 lg:flex flex-row justify-between">
+        <div class=" p-1 rounded-md w-28 bg-sky-500 group ">
+          <img src="./assets/aero.png" alt="phone" class="w-40  rounded scale-90 group-hover:scale-100 ease-in duration-200 ">
+          <div class="mt-2 mb-2">
+              <h2 class="text-sm font-semibold tracking-wide">Flat 40% Cashback</h2>
+          </div>
+        </div>  
+        <div class=" p-1 rounded-md w-28 bg-sky-500 group ">
+          <img src="./assets/refund.png" alt="phone" class="w-40  rounded scale-90 group-hover:scale-100 ease-in duration-200  ">
+          <div class="mt-2 mb-2">
+              <h2 class="text-sm font-semibold tracking-wide">100% Refund</h2>
+          </div>
+        </div>  
+        <div class=" p-1 rounded-md w-28 bg-sky-500  group">
+          <img src="./assets/bus.png" alt="phone" class="w-40  rounded rounded scale-90 group-hover:scale-100 ease-in duration-200  ">
+          <div class="mt-2 mb-2">
+              <h2 class="text-sm font-semibold tracking-wide">Flat 10% Cashback</h2>
+          </div>
+        </div>  
+        <div class=" p-1 rounded-md w-28 bg-sky-500 group ">
+          <img src="./assets/sani.png" alt="phone" class="w-40  rounded rounded scale-90 group-hover:scale-100 ease-in duration-200  ">
+          <div class="mt-2 mb-2">
+              <h2 class="text-sm font-semibold tracking-wide">Sanitised Bus <br> Options with <br> Travel Safe+ </h2>
+          </div>
+        </div>  
+        <div class=" p-1 rounded-md w-28 bg-sky-500 group ">
+          <img src="./assets/trainn.png" alt="phone" class="w-40  rounded rounded scale-90 group-hover:scale-100 ease-in duration-200 ">
+          <div class="mt-2 mb-2">
+              <h2 class="text-sm font-semibold tracking-wide">Hassle-free Train Ticket Booking</h2>
+          </div>
+        </div>  
+        <div class=" p-1 rounded-md w-28 bg-sky-500 group ">
+          <img src="./assets/pnr.png" alt="phone" class="w-40  rounded rounded scale-90 group-hover:scale-100 ease-in duration-200 ">
+          <div class="mt-2 mb-2">
+              <h2 class="text-sm font-semibold tracking-wide">PNR Status <br> Check In <br> Few Simple Clicks</h2>
+          </div>
+        </div>  
+      </div>
+    </div>
+    <footer class="flex flex-row w-3/4 justify-between ml-28 mt-20 mb-10 ">
+
+      <div class=" flex flex-row w-1/2 justify-between "> <h1> Download Paytm App <br> to Pay from anywhere</h1>
+      <img src="./assets/play.svg" alt="">
+      <img src="./assets/appstore.svg" alt="">
+      </div>
+      <div class=" flex flex-row w-24 justify-between ">
+        <img src="./assets/tw.svg" alt="twitter" class="w-5">
+        <img src="./assets/insta.svg" alt="insta" class="w-5">
+        <img src="./assets/fb.svg" alt="fb" class="w-3">
+      </div>
+    </footer>
+    <hr>
+    <!-- -------------------section------------------------------------------ -->
+    <!-- -------------------section------------------------------------------ -->
+    <section >
+      <div class="container flex flex-col justify-center p-4 mx-auto md:p-8">
+        <div class="flex flex-col divide-y sm:px-8 lg:px-12 xl:px-32 divide-gray-700">
+          <details>
+            <summary class="py-2 outline-none cursor-pointer focus:underline">More About Paytm</summary>
+            <div class="px-4 pb-4">
+              <p>Paytm - India’s largest mobile e-commerce website is an ultimate destination for prompt Online Recharge, DTH, Data Card & Metro Card Recharge and Mobile Bill Payment for Airtel, Aircel, BSNL, Idea, MTNL, Vodafone & other operators for all the circles across India. Enjoy our online recharge and bill payment service along with best bonus packs of internet & roaming within a jiffy.
+                 Now you don’t have to look at various websites to find the best entertainment option in your city. You can book movie tickets, event tickets and travel tickets within minutes on Paytm.com. Paytm login is very easy on the Paytm app and Paytm website. Just enter your number and Password/OTP to login and process all the transactions instantly on Paytm.</p>
+            </div>
+          </details>
+          <details>
+            <summary class="py-2 outline-none cursor-pointer focus:underline">Company</summary>
+            <div class="px-4 pb-4">
+              <p>Paytm - India’s largest mobile e-commerce website is an ultimate destination for prompt Online Recharge, DTH, Data Card & Metro Card Recharge and Mobile Bill Payment for Airtel, Aircel, BSNL, Idea, MTNL, Vodafone & other operators for all the circles across India. Enjoy our online recharge and bill payment service along with best bonus packs of internet & roaming within a jiffy.
+                Now you don’t have to look at various websites to find the best entertainment option in your city. You can book movie tickets, event tickets and travel tickets within minutes on Paytm.com. Paytm login is very easy on the Paytm app and Paytm website. Just enter your number and Password/OTP to login and process all the transactions instantly on Paytm.</p>
+            </div>
+          </details>
+          <details>
+            <summary class="py-2 outline-none cursor-pointer focus:underline">Investor Relation</summary>
+            <div class="px-4 pb-4 space-y-2">
+              <p>Paytm - India’s largest mobile e-commerce website is an ultimate destination for prompt Online Recharge, DTH, Data Card & Metro Card Recharge and Mobile Bill Payment for Airtel, Aircel, BSNL, Idea, MTNL, Vodafone & other operators for all the circles across India. Enjoy our online recharge and bill payment service along with best bonus packs of internet & roaming within a jiffy.
+                Now you don’t have to look at various websites to find the best entertainment option in your city. You can book movie tickets, event tickets and travel tickets within minutes on Paytm.com. Paytm login is very easy on the Paytm app and Paytm website. Just enter your number and Password/OTP to login and process all the transactions instantly on Paytm. </p>
+            </div>
+          </details>
+          <details>
+            <summary class="py-2 outline-none cursor-pointer focus:underline">Recharege & Pay Bills</summary>
+            <div class="px-4 pb-4 space-y-2">
+              <p>Paytm - India’s largest mobile e-commerce website is an ultimate destination for prompt Online Recharge, DTH, Data Card & Metro Card Recharge and Mobile Bill Payment for Airtel, Aircel, BSNL, Idea, MTNL, Vodafone & other operators for all the circles across India. Enjoy our online recharge and bill payment service along with best bonus packs of internet & roaming within a jiffy.
+                Now you don’t have to look at various websites to find the best entertainment option in your city. You can book movie tickets, event tickets and travel tickets within minutes on Paytm.com. Paytm login is very easy on the Paytm app and Paytm website. Just enter your number and Password/OTP to login and process all the transactions instantly on Paytm. </p>
+            </div>
+          </details>
+          <details>
+            <summary class="py-2 outline-none cursor-pointer focus:underline">Pay Loan EMI, Insurance Premiums & Education Fee</summary>
+            <div class="px-4 pb-4 space-y-2">
+              <p>Paytm - India’s largest mobile e-commerce website is an ultimate destination for prompt Online Recharge, DTH, Data Card & Metro Card Recharge and Mobile Bill Payment for Airtel, Aircel, BSNL, Idea, MTNL, Vodafone & other operators for all the circles across India. Enjoy our online recharge and bill payment service along with best bonus packs of internet & roaming within a jiffy.
+                Now you don’t have to look at various websites to find the best entertainment option in your city. You can book movie tickets, event tickets and travel tickets within minutes on Paytm.com. Paytm login is very easy on the Paytm app and Paytm website. Just enter your number and Password/OTP to login and process all the transactions instantly on Paytm. </p>
+            </div>
+          </details>
+          <details>
+            <summary class="py-2 outline-none cursor-pointer focus:underline">Investments & Miscellaneous</summary>
+            <div class="px-4 pb-4 space-y-2">
+              <p>Paytm - India’s largest mobile e-commerce website is an ultimate destination for prompt Online Recharge, DTH, Data Card & Metro Card Recharge and Mobile Bill Payment for Airtel, Aircel, BSNL, Idea, MTNL, Vodafone & other operators for all the circles across India. Enjoy our online recharge and bill payment service along with best bonus packs of internet & roaming within a jiffy.
+                Now you don’t have to look at various websites to find the best entertainment option in your city. You can book movie tickets, event tickets and travel tickets within minutes on Paytm.com. Paytm login is very easy on the Paytm app and Paytm website. Just enter your number and Password/OTP to login and process all the transactions instantly on Paytm. </p>
+            </div>
+          </details>
+          <details>
+            <summary class="py-2 outline-none cursor-pointer focus:underline">Financial Tools & Calculators</summary>
+            <div class="px-4 pb-4 space-y-2">
+              <p>Paytm - India’s largest mobile e-commerce website is an ultimate destination for prompt Online Recharge, DTH, Data Card & Metro Card Recharge and Mobile Bill Payment for Airtel, Aircel, BSNL, Idea, MTNL, Vodafone & other operators for all the circles across India. Enjoy our online recharge and bill payment service along with best bonus packs of internet & roaming within a jiffy.
+                Now you don’t have to look at various websites to find the best entertainment option in your city. You can book movie tickets, event tickets and travel tickets within minutes on Paytm.com. Paytm login is very easy on the Paytm app and Paytm website. Just enter your number and Password/OTP to login and process all the transactions instantly on Paytm. </p>
+            </div>
+          </details>
+          <details>
+            <summary class="py-2 outline-none cursor-pointer focus:underline">Insurance (Powered by Paytm Insurance Broking Private Limited)</summary>
+            <div class="px-4 pb-4 space-y-2">
+              <p>Paytm - India’s largest mobile e-commerce website is an ultimate destination for prompt Online Recharge, DTH, Data Card & Metro Card Recharge and Mobile Bill Payment for Airtel, Aircel, BSNL, Idea, MTNL, Vodafone & other operators for all the circles across India. Enjoy our online recharge and bill payment service along with best bonus packs of internet & roaming within a jiffy.
+                Now you don’t have to look at various websites to find the best entertainment option in your city. You can book movie tickets, event tickets and travel tickets within minutes on Paytm.com. Paytm login is very easy on the Paytm app and Paytm website. Just enter your number and Password/OTP to login and process all the transactions instantly on Paytm. </p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>
